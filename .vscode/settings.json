@@ -1,0 +1,13 @@
+{
+  "liveSassCompile.settings.forceBaseDirectory": "scss",
+  "liveSassCompile.settings.watchOnLaunch": true,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": "assets/style",
+      "savePathReplacementPairs": null
+    }
+  ],
+  "liveServer.settings.port": 5502
+}

@@ -1,0 +1,134 @@
+.nav {
+  padding-top: 24px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+
+    & button {
+      padding: 8px;
+      background: #F8F3EC;
+      border-radius: 12px;
+    }
+
+    & button:hover,
+      button:active {
+      background-color: #D3A562;
+    }
+
+    & button:nth-child(3) {
+      display: none;
+    }
+
+    & button:nth-child(4) {
+      display: none;
+      padding: 12px 24px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &__list {
+    display: none;
+
+    &__item a {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    &__item a:hover,
+    &__item a:active {
+      color: #D3A562;
+    }
+  }
+
+  &__modal {
+    position: fixed;
+    top: 0;
+    right: -100%;  
+    height: 100vh;
+    width: 300px;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: right 0.3s ease-in-out; 
+    padding: 20px;
+
+    &--active {
+      right: 0;
+    }
+
+    &-links {
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      border-bottom: 1px solid #D3A562;
+
+      &__item a:hover,
+      &__item a:active {
+        color: #D3A562;
+      }
+    }
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999; 
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: none;
+
+    &--active {
+      display: block;
+      opacity: 1;
+    }
+  }
+}
+
+
+@include mobile-large {
+  .nav {
+    padding-top: 56px;
+    
+    &__left {
+      gap: 24px;
+
+      & button:nth-child(3) {
+        display: block;
+      }
+
+      & button:nth-child(4) {
+        display: block;
+      }
+    }
+  }
+}
+
+@include tablet {
+  
+}
+
+@include desktop {
+  .nav {
+
+    &__list {
+      display: flex;
+      gap: 40px;
+    }
+  }
+}

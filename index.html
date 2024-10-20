@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="container nav__wrapper">
+          <div class="nav__logo">
+            <img src="./assets/images/logo.svg" alt="nav_logo" />
+          </div>
+
+          <div class="nav__left">
+            <ul class="nav__list">
+              <li class="nav__list__item">
+                <a href="">Отели</a>
+              </li>
+              <li class="nav__list__item">
+                <a href="">Путешествия</a>
+              </li>
+              <li class="nav__list__item">
+                <a href="">Экскурсии</a>
+              </li>
+              <li class="nav__list__item">
+                <a href="">Страны</a>
+              </li>
+            </ul>
+            <button class="nav__burger-btn" id="burger-btn">
+              <img src="./assets/icons/burger-menu-icon.svg" alt="burger-btn" />
+            </button>
+            <button class="nav__search_btn">
+              <img src="./assets/icons/search_btn.svg" alt="search_btn" />
+            </button>
+            <button class="nav__login_btn">Войти</button>
+          </div>
+        </div>
+
+        <div class="nav__modal" id="nav-modal">
+          <ul class="nav__modal-links">
+            <li class="nav__modal-links__item">
+              <a href="#">Отели</a>
+            </li>
+            <li class="nav__modal-links__item">
+              <a href="#">Путешествия</a>
+            </li>
+            <li class="nav__modal-links__item">
+              <a href="#">Экскурсии</a>
+            </li>
+            <li class="nav__modal-links__item">
+              <a href="#">Страны</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__overlay"></div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero__wrapper">
+          <div class="hero__content">
+            <h2>КУРШЕВЕЛЬ <br>НА ВСЕ ВРЕМЕНА!</h2>
+            <p>В самом востребованном отеле курорта Le Lana с 28 декабря по 2 января доступны для бронирования</p>
+            <button class="primary_btn">Подробнее</button>
+          </div>
+          <ul class="hero__list">
+            <li class="hero__list__item">
+              <img src="./assets/images/hero-img1.png" alt="hero-images">
+            </li>
+            <li class="hero__list__item">
+              <img src="./assets/images/hero-img2.png" alt="hero-images">
+            </li>
+            <li class="hero__list__item">
+              <img src="./assets/images/hero-img3.png" alt="hero-images">
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container about__wrapper">
+          <ul class="about__top_list">
+            <li class="about__top_list__item">
+              <div class="about__top_list__item__content">
+                <i class="about_date">01 декабря 2022</i>
+                <p class="about_info">Путешествие</p>
+                <h3 class="about_title">BVLGARI RESORT BALI: <br>ПООЩРИТЕЛЬНАЯ ПРОГРАММА</h3>
+                <p class="about_text">Поощрительная программа от Bvlgari Resort Bali</p>
+              </div>
+              <img class="about__top_list__item__img" src="./assets/images/bvlgari_resort.png" alt="resort_img">
+            </li>
+            <li class="about__top_list__item">
+              <div class="about__top_list__item__content">
+                <i class="about_date">01 декабря 2022</i>
+                <p class="about_info">Путешествие</p>
+                <h3 class="about_title">Вакцинный туризм: <br>последние сводки с полей</h3>
+                <p class="about_text">Одобрена инициатива министра туризма Израиля о допуске в страну туристов, привитых российской вакциной “Спутник V”. Наши путешественники смогут приезжать в Израиль уже с 1 декабря.</p>
+              </div>
+              <button class="primary_btn">Подробнее</button>
+            </li>
+            <li class="about__top_list__item">
+              <div class="about__top_list__item__content">
+                <i class="about_date">01 декабря 2022</i>
+                <p class="about_info">Путешествие</p>
+                <h3 class="about_title">Вакцинный туризм: <br>последние сводки с полей</h3>
+                <p class="about_text">Одобрена инициатива министра туризма Израиля о допуске в страну туристов, привитых российской вакциной “Спутник V”. Наши путешественники смогут приезжать в Израиль уже с 1 декабря.</p>
+              </div>
+              <button class="primary_btn">Подробнее</button>
+            </li>
+            <li class="about__top_list__item">
+              <img class="about__top_list__item__plane_img" src="./assets/images/plane.png" alt="plane_img">
+              <div class="about__top_list__item__content_box">
+                <i class="about_date">01 декабря 2022</i>
+                <p class="about_info">Путешествие</p>
+                <h3 class="about_title">КУРШЕВЕЛЬ НА ВСЕ ВРЕМЕНА!</h3>
+                <p class="about_text">Одобрена инициатива министра туризма Израиля о допуске в страну туристов, привитых российской вакциной “Спутник V”. Наши путешественники смогут приезжать в Израиль уже с 1 декабря.</p>
+              </div>
+            </li>
+          </ul>
+          <div class="about__middle_list">
+            <img class="about__middle_list__top_pic" src="./assets/images/plane.png" alt="plane_img">
+            <div class="about__middle_list__content">
+              <i class="about_date">01 декабря 2022</i>
+              <p class="about_info">Путешествие</p>
+              <h3 class="about_title">Одобрена инициатива министра туризма Израиля о допуске в страну туристов, привитых российской вакциной “Спутник V”.</h3>
+              <p class="about_text">Одобрена инициатива министра туризма Израиля о допуске в страну туристов, привитых российской вакциной “Спутник V”. Наши путешественники смогут приезжать в Израиль уже с 1 декабря.</p>
+              <button class="primary_btn">Подробнее</button>
+            </div>
+            <img class="about__middle_list__bottom_pic" src="./assets/images/bvlgari_resort.png" alt="resort_img">
+          </div>
+          <ul class="about__bottom_list">
+            <li class="about__bottom_list__item">
+              <i class="about_date">01 декабря 2022</i>
+              <p class="about_info">Путешествие</p>
+              <h3 class="about_title">КУРШЕВЕЛЬ НА ВСЕ ВРЕМЕНА!</h3>
+              <p class="about_text">Одобрена инициатива министра туризма Израиля о допуске в страну туристов, привитых российской вакциной “Спутник V”. Наши путешественники смогут приезжать в Израиль уже с 1 декабря.</p>
+            </li>
+            <li class="about__bottom_list__item">
+              <i class="about_date">01 декабря 2022</i>
+              <p class="about_info">Отель</p>
+              <h3 class="about_title">Patina maldives: если хочется чего-нибудь новенького!</h3>
+              <p class="about_text">Одобрена инициатива министра туризма Израиля о допуске в страну туристов, привитых российской вакциной “Спутник V”. </p>
+            </li>
+            <li class="about__bottom_list__item">
+              <i class="about_date">01 декабря 2022</i>
+              <p class="about_info">НОВОСТИ</p>
+              <h3 class="about_title">РЕЙСЫ ИЗ МОСКВЫ В ТАИЛАНД (ПХУКЕТ), В ИНДИЮ (ДЕЛИ) И НА МАЛЬДИВЫ (МАЛЕ)</h3>
+              <p class="about_text">Наши путешественники смогут приезжать в Израиль уже с 1 декабря.</p>
+            </li>
+            <li class="about__bottom_list__item">
+              <i class="about_date">01 декабря 2022</i>
+              <p class="about_info">Путешествие</p>
+              <h3 class="about_title">КУРШЕВЕЛЬ НА ВСЕ ВРЕМЕНА!</h3>
+              <p class="about_text">Одобрена инициатива министра туризма Израиля о допуске в страну туристов, привитых российской вакциной “Спутник V”. Наши путешественники смогут приезжать в Израиль уже с 1 декабря.</p>
+            </li>
+            <li class="about__bottom_list__item">
+              <i class="about_date">01 декабря 2022</i>
+              <p class="about_info">Путешествие</p>
+              <h3 class="about_title">Patina maldives: если хочется чего-нибудь новенького!</h3>
+              <p class="about_text">Одобрена инициатива министра туризма Израиля о допуске в страну туристов, привитых российской вакциной “Спутник V”. </p>
+            </li>
+          </ul>
+        </div>
+        <div class="container about_btn_box">
+          <button class="primary_btn">Все анонсы</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__wrapper">
+        <div class="footer__top">
+          <img src="./assets/images/logo.svg" alt="logo">
+          <div class="footer__top__right">
+            <ul class="footer__top__list">
+              <li>
+                <a href="#">Отели</a>
+              </li>
+              <li>
+                <a href="#">Путешествия</a>
+              </li>
+              <li>
+                <a href="#">Экскурсии</a>
+              </li>
+              <li>
+                <a href="#">Страны</a>
+              </li>
+            </ul>
+            <button>
+              <img src="./assets/icons/burger-menu-icon.svg" alt="burger-btn">
+            </button>
+          </div>
+        </div>
+        <ul class="footer__middle__list">
+          <li class="footer__middle__list__item">
+            <p>Москва</p>
+            <p>+7 (499) 995-21-79</p>
+            <p>info@alacarte.world</p>
+          </li>
+          <li class="footer__middle__list__item">
+            <p>Дубай</p>
+            <p>+971 (4) 000-0000</p>
+            <p>info@alacarte.world</p>
+          </li>
+          <li class="footer__middle__list__item">
+            <p>Мы в соц.сетях</p>
+            <div>
+              <button>
+                <img src="./assets/icons/facebook.svg" alt="app_icon">
+              </button>
+              <button>
+                <img src="./assets/icons/yt.svg" alt="app_icon">
+              </button>
+              <button>
+                <img src="./assets/icons/instagram.svg" alt="app_icon">
+              </button>
+            </div>
+          </li>
+        </ul>
+        <div class="footer__bottom__list">
+          <p class="footer__bottom__list__title">Курс на 06.11.2021</p>
+          <div class="footer__bottom__list__box">
+            <p>RUB/USD 72,9173</p>
+            <p>RUB/EUR 84,4674</p>
+            <p>RUB/GBP 99,3207</p>
+            <p>RUB/CHF 79,9094</p>
+          </div>
+          <div class="footer__bottom__list__brands">
+            <img src="./assets/icons/visa.svg" alt="brands">
+            <img src="./assets/icons/masterCard.svg" alt="brands">
+            <img src="./assets/icons/mir.svg" alt="brands">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+body {
+  font-family: $font-family;
+}
+
+.about_date {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #d3a562;
+}
+
+.about_info {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 80%;
+}
+
+.about_title {
+  font-family: $secondary-family;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.about_text {
+  padding-top: 12px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  opacity: 90%;
+}

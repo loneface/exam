@@ -1,0 +1,137 @@
+.hero {
+  padding-top: 24px;
+
+  &__wrapper {
+    background-image: url(/assets/images/hero-mb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 454px;
+  }
+
+  &__content {
+    padding-top: 190px;
+    padding-left: 16px;
+
+    & h2 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    & p {
+      padding: 16px 0;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    & button,
+    .primary_btn {
+      padding: 10px 24px;
+      border-radius: 12px;
+      background: #d3a562;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #fff;
+    }
+  }
+
+  &__list {
+    padding-top: 68px;
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+
+    &__item img {
+      width: 24.02px;
+      height: 24.02px;
+    }
+  }
+}
+
+.primary_btn:hover,
+.primary_btn:active {
+  background-color: #f8f3ec;
+  color: #000;
+}
+
+@include mobile-large {
+  .hero {
+    padding-top: 47px;
+
+    &__wrapper {
+      background-image: url(/assets/images/hero-mb-large.png);
+      height: 627px;
+    }
+
+    &__content {
+      padding-top: 257px;
+      max-width: 341px;
+
+      & h2 {
+        font-size: 36px;
+        line-height: 56px;
+      }
+
+      & p {
+        font-size: 18px;
+        line-height: 32px;
+      }
+    }
+
+    &__list {
+      padding-top: 41px;
+      gap: 54px;
+
+      &__item img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .hero {
+
+    &__wrapper {
+      background-image: url(/assets/images/hero-tablet.png), url(/assets/images/hero-tablet2.png);
+      position: relative;
+      background-position: center, center bottom -28px;
+      height: 588px;
+    }
+
+    &__content {
+      padding-top: 210px;
+      padding-left: 34px;
+      max-width: 361px;
+    }
+
+    &__list {
+      flex-direction: column;
+      gap: 16px;
+      position: absolute;
+      top: 114px;
+      right: 64px;
+    }
+  }
+}
+
+@include desktop {
+  .hero {
+
+    &__wrapper {
+      background-image: url(/assets/images/hero-desktop.png), url(/assets/images/hero-desktop2.png);
+    }
+
+    &__content {
+      padding-left: 100px;
+      max-width: 500px;
+    }
+
+    &__list {
+      right: 126px;
+    }
+  }
+}

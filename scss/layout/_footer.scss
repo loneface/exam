@@ -1,0 +1,230 @@
+.footer {
+    padding-top: 24px;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__right {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        &__list {
+            display: none;
+            gap: 43px;
+
+            & li {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            & li:hover,
+            & li:active {
+                color: #D3A562;
+            }
+        }
+
+        & button {
+            padding: 8px;
+            background: #F8F3EC;
+            border-radius: 12px;
+        }
+
+        & button:hover,
+        & button:active {
+            background-color: #D3A562;
+        }
+    }
+
+    &__middle__list {
+        padding-top: 16px;
+        padding-bottom: 32px;
+        text-align: center;
+
+        &__item:not(:last-child) {
+            padding-top: 16px;
+            border-bottom: 1px solid #E0E0E0;
+        }
+
+        &__item:nth-last-child(1) {
+            padding-top: 32px;
+
+            & P {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
+        &__item {
+
+            & p {
+                padding-bottom: 16px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            & div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 24px;
+            }
+        }
+    }
+
+    &__bottom__list {
+
+        &__title {
+            text-align: center;
+            padding-bottom: 31px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background: #888C94;
+            border-radius: 28px;
+            padding: 12px 63.5px;
+            color: #fff;
+
+            & p {
+                font-family: $secondary-family;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 32px;
+            }
+        }
+
+        &__brands {
+            padding-top: 32px;
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+@include mobile-large {
+    .footer {
+
+        &__middle__list {
+            padding-top: 80px;
+            display: flex;
+            flex-wrap: wrap;
+
+            &__item:not(:last-child) {
+                border-bottom: none;
+                padding-right: 42px;
+                border-right: 1px solid #E0E0E0;
+            }
+
+            &__item:nth-child(2) {
+                padding-left: 42px;
+            }
+
+            &__item:nth-child(3) {
+                display: flex;
+                gap: 145px;
+                justify-content: space-between;
+            }
+        }
+
+        &__bottom__list {
+            padding-top: 65px;
+            position: relative;
+            
+            &__title {
+                text-align: start;
+            }
+
+            &__box {
+                flex-direction: inherit;
+                flex-wrap: wrap;
+            }
+
+            &__brands {
+                position: absolute;
+                top: 15px;
+                right: 0;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .footer {
+        padding-top: 64px;
+
+        &__top {
+
+            &__list {
+                display: flex;
+            }
+        }
+
+        &__middle__list {
+
+            &__item:not(:last-child) {
+                padding-right: 60px;
+                text-align: start;
+            }
+
+            &__item:nth-child(2) {
+                padding-left: 60px;
+            }
+
+            &__item:nth-child(3) {
+                padding-top: 10px;
+                padding-left: 200px;
+                text-align: end;
+                flex-direction: column;
+                gap: 32px;
+            }
+        }
+
+        &__bottom__list {
+
+            &__box {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@include desktop {
+    .footer {
+
+        &__middle__list {
+            flex-wrap: nowrap;
+            justify-content: space-between;
+
+            &__item:not(:last-child) {
+                padding-right: 170px;
+            }
+        }
+
+        &__bottom__list {
+            display: flex;
+            gap: 8px;
+
+            &__box {
+                position: absolute;
+                right: 270px;
+                bottom: 20px;
+                gap: 8px;
+            }
+        }
+    }
+}
